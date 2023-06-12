@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // days till next christmas
+        var d1=new Date('2022,12,25');
+        var d2=new Date('2022,10,22');
+        // alert(d2.getMonth());
+        if(d2.getMonth()==11 && d2.getDate()>=25)
+        {
+            d1.setFullYear(d1.getFullYear()+1);
+        }
+        var total=((d1-d2)/86400000);
+        alert("The number is:"+total);
+    </script>
+</body>
+</html>

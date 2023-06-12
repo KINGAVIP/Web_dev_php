@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="callme(this)">Change my color</h1>
+    <script>
+        function callme(e)
+        {
+            let color="#";
+            let digits="0123456789ABCDEF"
+            for(let i=0;i<6;i++)
+            {
+                let idx=Math.floor(Math.random()*16);
+                // alert(idx);
+                color+=digits[idx];
+            }
+            document.body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
